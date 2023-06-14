@@ -1,0 +1,32 @@
+.form-input{
+    display: block;
+    font-size: 1.8rem;
+    width: 20%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.button:hover{
+    color: #8EC3B0;
+    background: black;
+}
+
+.button{
+    background-color: #8EC3B0;
+    background-image: -webkit-linear-gradient(top, #8EC3B0, #8EC3B0);
+    background-image: -moz-linear-gradient(top, #8EC3B0, #8EC3B0);
+    background-image: -ms-linear-gradient(top, #8EC3B0, #8EC3B0);
+    background-image: -o-linear-gradient(top, #8EC3B0, #8EC3B0);
+    background-image: linear-gradient(to bottom, #8EC3B0, #8EC3B0);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    border-color: darkslategray;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    width: 20%;
+}
