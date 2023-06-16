@@ -5,24 +5,10 @@ const express = require("express");
 
 const router = express.Router();
 
-const rootDir = require('../util/path');
-const adminData = require('./admin');
-const { title } = require('process');
+const productsController = require('../controllers/products');
 
-router.get("/take-to-add-product", (req, res, next) => {
-  res.redirect("/admin/add-product");
-});
+router.get("/take-to-add-product", productsController.takeToAddProduct);
 
-router.get("/", (req, res, next) => {
-  const products = adminData.products;
-  res.render('shop', {
-    pageTitle : 'Shop',
-    prods : products,
-    hasProducts : products.length > 0,
-    shopCSS : true,
-    path : '/',
-    isShopActive : true
-  });
-});
+router.get("/", productsController.getProducts);
 
 module.exports = router;
