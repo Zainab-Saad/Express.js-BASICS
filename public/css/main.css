@@ -12,6 +12,16 @@ a:hover{
     color:#8EC3B0;
 }
 
+::selection{
+    color: darkred;
+    /* color: #6b1a22; */
+
+}
+
+.active{
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
 
 .main-header{
     padding: 10px;

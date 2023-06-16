@@ -1,0 +1,42 @@
+<%- include('includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/shop.css">
+</head>
+<body>
+    <%- include('includes/nav.ejs') %>
+
+    <main class="main">
+        <h1 class="main-heading">Shopping Cart!</h1>
+        <div class="form-div">
+            <form action="/take-to-add-product" class="form">
+                <button type="submit" class="button">
+                    Take me to Add product page!!
+                </button>
+            </form>
+        </div>
+        <!-- can write vanilla  js code here -->
+        <% if (prods.length > 0 ) { %>
+        <h3 class="main-heading">My Products</h3>
+        <div class="grid">
+            <% for (product of prods) { %>
+            <article class="card product-item">
+                <header class="card-header">
+                    <h1 class="product_title"><%=product%></h1>
+                </header>
+                <div class="card__image">
+                    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Ffree-photos-vectors%2Fbook&psig=AOvVaw0OBEgByJmIuViVbFj1mS_5&ust=1686835245248000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCIi9-I_twv8CFQAAAAAdAAAAABAE" alt="">
+                </div>
+                <div class="card__content">
+                    <h2 class="product__price">19.99</h2>
+                    <p class="product__description">A very interesting book</p>
+                </div>
+                <div class="card__actions">
+                    <button type="submit" class="btn">Add to Cart</button>
+                </div>
+
+            </article>
+            <% } %>
+       <% } else { %>
+            <h1 class="main-heading">No Products Found</h1>
+       <% } %>
+    </main>
+<%- include('includes/end.ejs') %>
