@@ -1,15 +1,16 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: auto;
+    color: #565656
 }
 
 a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 a:hover{
-    color:#8EC3B0;
+    color: #FFAE42;
 }
 
 ::selection{
@@ -21,20 +22,18 @@ a:hover{
 .active{
     text-decoration: underline;
     text-underline-offset: 1rem;
+    color: #FFAE42;
 }
+
+/* .main{
+    background-color: #5e81d1;
+} */
 
 .main-header{
     padding: 10px;
+    color:  white;
+    background-color:	#5e81d1;
 }
-
-.main-header:hover{
-    background-color: black;
-}
-
-.main-header:hover a{
-    color:#8EC3B0;
-}
-
 .main-header__item-list{
     list-style-type: none;
     font-size: 2rem;
@@ -43,6 +42,7 @@ a:hover{
 .main-header__item{
     display: inline;
     margin: 10px;
+    color: white;
 }
 
 .main-heading{
